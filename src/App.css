@@ -1,38 +1,80 @@
-.App {
+.custom_title{
+  font-size: 2.2rem;
+}
+
+.t-center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.f-small{
+  font-size: 1.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.f-normal{
+  font-size: 1.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.f-medium{
+  font-size: 1.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.f-large{
+  font-size: clamp(1.9rem,1.5rem + 2vw, 2.4rem);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.f-bold{
+  font-weight: bold;
+}
+
+
+
+.mrg-large{
+  margin: 6rem 0;
+}
+.custom-title{
+  
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.custom-title::before{
+  content: "---------";
+  text-indent: -15000px;
+  border-top: 5px solid #43bacc;
+  display: inline-block;
+  line-height: 0;
+  width: 5%;
+  margin: 10px;
+  vertical-align: middle;
+
+}
+.custom-title::after{
+  content: "---------";
+  text-indent: -15000px;
+  border-top: 5px solid #43bacc;
+  display: inline-block;
+  line-height: 0;
+  width: 5%;
+  margin: 10px;
+  vertical-align: sub;
+}
+
+.discount{
+  text-decoration: line-through;
+  color: #000000c4;
+}
+
+.btn-normal{
+  width: 100%;
+  padding: .8rem;
+  background: none;
+  border: 2px solid #43bacc;
+  color: #085f6d;
+  cursor: pointer;
+}
+
+.btn-normal:hover{
+  background-color: #085f6d4d;
 }

@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route, Navigate, useParams} from 'react-router-do
 import './App.css';
 import Home from './pages/home/Home';
 import Header from './components/header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route path='/' element={<Home/>}/>         
         </Routes> 
       </BrowserRouter>
-    {/* <footer>footer</footer> */}
+    <Footer/>
     </div>
   );
 }

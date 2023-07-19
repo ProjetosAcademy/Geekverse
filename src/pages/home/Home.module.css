@@ -1,0 +1,32 @@
+
+.products_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax( 284px, 1fr));
+    grid-gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.card_container,.info_product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card_container{
+    padding: 2rem;
+    max-width: 26.4rem;
+    min-width: 26.4rem;
+    border: 1px solid #3333335d
+}
+
+.info_product{
+    padding-top: 2rem;
+    gap: 1.2rem;
+    
+}
+
+.discount{
+    text-decoration:line-through;
+}

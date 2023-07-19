@@ -1,0 +1,13 @@
+.footer_container{
+    min-height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-top: 1px solid #0000007c;
+}
+
+.footer_container, .footer_container a {
+    color: #000000c7;
+}

@@ -9,24 +9,30 @@
 }
 .primary_header{
     width: 100%;
-    padding: 1rem clamp(1rem, .5rem + 2vw, 5rem);
+    
 
 }
 .primary_row1, .primary_row2{
     display: flex;
     align-items: center;
+    padding: 1rem clamp(1rem, .5rem + 2vw, 5rem);
 }
 
 .primary_row1{
+    background-color: #FFF;
     width: 100%;
+
+   
     justify-content: space-around;
-    gap: 1.8rem;
-    padding: 2rem;
+    gap: 1.2rem;
+    padding-left: 5.5rem;
+
 }
 
 
 .primary_row2{
-   
+   background-color: #e2e2e2;
+   display: none;
  
 }
 
@@ -73,13 +79,16 @@
     left: 1rem;
     font-size: 2rem;
     color: #3333339c;
+    
 }
 
 .toggle_exitBg{
     height: 99vh;
     width: 100%;
     background-color: #00000057;
-    position: absolute;
+    position: fixed;
+    z-index: 8;
+    
 }
 
 .toggle_container{
@@ -87,10 +96,11 @@
     display: block;
     height: 99vh;
     max-width: 30rem;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: -2px;
-    z-index: 1;
+    z-index: 9;
+    
 }
 
 
@@ -189,7 +199,7 @@ color: #333;
     .primary_row1{
        justify-content: space-between;
     }
-    .primary_nav,.primary{
+    .primary_nav,.primary,.primary_row2{
         display: flex;
         color: #000;
     }
