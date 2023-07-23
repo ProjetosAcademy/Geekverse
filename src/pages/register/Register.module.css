@@ -1,0 +1,46 @@
+.form_container,.form_table{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form_container{
+    border: 1px solid #000;
+    gap: 4rem;
+    max-width: 45rem;
+    min-height: 40rem;
+    padding: 2rem;
+    margin: 2rem auto;
+
+}
+
+.form_table{
+    gap: 3rem;
+    align-items: center;
+   
+    justify-content: center;
+}
+
+.form_item{
+    width: 100%;
+    position: relative;
+}
+
+.form_item input{
+    padding: .8rem;
+    width: 100%;
+}
+
+.field_name{
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+    transition: .2s linear;
+
+}
+
+.form_item:has(input:focus) .field_name, .form_item:has(input:valid) .field_name{
+    bottom: 3.5rem;
+    left: 0;
+    font-size: 1.4rem; 
+}

@@ -8,6 +8,7 @@ import 'swiper/css/navigation'
 
 import Banner from '../../components/Banners/Banner'
 import styles from './Home.module.css'
+import Card from '../../components/Cards/Card';
 
 //assets
 //hooks
@@ -42,182 +43,27 @@ const Home = () => {
        1400:{slidesPerView:4.3}}}
       
       >
-        <SwiperSlide>
-          <div className={styles.card_container}>
-          <div className={styles.image_container}>
-            <a href="">
-              <img src={imageMock} alt="image mocada" />
-            </a>
-          </div>
-          <div className={styles.info_product}>
-            <span className={styles.product_name}>
-              caneca 3D expresso
-            </span>
-            <div className={styles.product_price}>
-              <p className='f-small'>de <span className=" discount">108.99$</span></p>
-              <p>por <span className="f-large">70.98$</span></p>
-            </div>
-            <button className='btn-normal f-normal f-bold'>comprar</button>
-          </div>
-         
+    <SwiperSlide>
+      <Card 
+        image={imageMock}
+        name = {'caneca'}
+        price={199.90}
+        discount={25}
+      />
+    </SwiperSlide>
 
-        </div>
-        </SwiperSlide>
-
-        <SwiperSlide> 
-          <div className={styles.card_container}>
-          <div className={styles.image_container}>
-            <a href="">
-              <img src={imageMock} alt="image mocada" />
-            </a>
-          </div>
-          <div className={styles.info_product}>
-            <span className={styles.product_name}>
-              caneca 3D expresso
-            </span>
-            <div className={styles.product_price}>
-              <p className='f-small'>de <span className=" discount">108.99$</span></p>
-              <p>por <span className="f-large">70.98$</span></p>
-            </div>
-            <button className='btn-normal f-normal f-bold'>comprar</button>
-          </div>
-         
-
-        </div>
-        </SwiperSlide>
-
-        <SwiperSlide> 
-          <div className={styles.card_container}>
-          <div className={styles.image_container}>
-            <a href="">
-              <img src={imageMock} alt="image mocada" />
-            </a>
-          </div>
-          <div className={styles.info_product}>
-            <span className={styles.product_name}>
-              caneca 3D expresso
-            </span>
-            <div className={styles.product_price}>
-              <p className='f-small'>de <span className=" discount">108.99$</span></p>
-              <p>por <span className="f-large">70.98$</span></p>
-            </div>
-            <button className='btn-normal f-normal f-bold'>comprar</button>
-          </div>
-         
-
-        </div>
-        </SwiperSlide>
-
-        <SwiperSlide> 
-          <div className={styles.card_container}>
-          <div className={styles.image_container}>
-            <a href="">
-              <img src={imageMock} alt="image mocada" />
-            </a>
-          </div>
-          <div className={styles.info_product}>
-            <span className={styles.product_name}>
-              caneca 3D expresso
-            </span>
-            <div className={styles.product_price}>
-              <p className='f-small'>de <span className=" discount">108.99$</span></p>
-              <p>por <span className="f-large">70.98$</span></p>
-            </div>
-            <button className='btn-normal f-normal f-bold'>comprar</button>
-          </div>
-         
-
-        </div>
-        </SwiperSlide>
-
-        <SwiperSlide> 
-          <div className={styles.card_container}>
-          <div className={styles.image_container}>
-            <a href="">
-              <img src={imageMock} alt="image mocada" />
-            </a>
-          </div>
-          <div className={styles.info_product}>
-            <span className={styles.product_name}>
-              caneca 3D expresso
-            </span>
-            <div className={styles.product_price}>
-              <p className='f-small'>de <span className=" discount">108.99$</span></p>
-              <p>por <span className="f-large">70.98$</span></p>
-            </div>
-            <button className='btn-normal f-normal f-bold'>comprar</button>
-          </div>
-         
-
-        </div>
-        </SwiperSlide>
-        
-        <SwiperSlide> 
-          <div className={styles.card_container}>
-          <div className={styles.image_container}>
-            <a href="">
-              <img src={imageMock} alt="image mocada" />
-            </a>
-          </div>
-          <div className={styles.info_product}>
-            <span className={styles.product_name}>
-              caneca 3D expresso
-            </span>
-            <div className={styles.product_price}>
-              <p className='f-small'>de <span className=" discount">108.99$</span></p>
-              <p>por <span className="f-large">70.98$</span></p>
-            </div>
-            <button className='btn-normal f-normal f-bold'>comprar</button>
-          </div>
-         
-
-        </div>
-        </SwiperSlide>
+    <SwiperSlide>
+      <Card 
+        image={imageMock}
+        name = {'caneca'}
+        price={199.90}   
+      />
+    </SwiperSlide>
 
       </Swiper>
 
         
-{/*        
-        <div className={styles.card_container}>
-          <div className={styles.image_container}>
-            <a href="">
-              <img src={imageMock} alt="image mocada" />
-            </a>
-          </div>
-          <div className={styles.info_product}>
-            <span className={styles.product_name}>
-              caneca 3D expresso
-            </span>
-            <div className={styles.product_price}>
-              <p className='f-small'>de <span className=" discount">108.99$</span></p>
-              <p>por <span className="f-large">70.98$</span></p>
-            </div>
-            <button className='btn-normal f-normal f-bold'>comprar</button>
-          </div>
-         
 
-        </div>
-        <div className={styles.card_container}>
-          <div className={styles.image_container}>
-            <a href="">
-              <img src={imageMock} alt="image mocada" />
-            </a>
-          </div>
-          <div className={styles.info_product}>
-            <span className={styles.product_name}>
-              caneca 3D expresso
-            </span>
-            <div className={styles.product_price}>
-              <p className='f-small'>de <span className=" discount">108.99$</span></p>
-              <p>por <span className="f-large">70.98$</span></p>
-            </div>
-            <button className='btn-normal f-normal f-bold'>comprar</button>
-          </div>
-         
-
-        </div> */}
-       
-      {/* </div> */}
     </section>
   )
 }

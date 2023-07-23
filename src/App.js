@@ -3,6 +3,8 @@ import './App.css';
 import Home from './pages/home/Home';
 import Header from './components/header/Header';
 import Footer from './components/Footer/Footer';
+import Register from './pages/register/Register';
+import Login from './pages/login/Login';
 
 function App() {
   return (
@@ -10,10 +12,12 @@ function App() {
       <BrowserRouter>
        <Header/>
         <Routes>
+          <Route path='/register' element={<Register/>}/>         
+          <Route path='/login' element={<Login/>}/>         
           <Route path='/' element={<Home/>}/>         
         </Routes> 
-      </BrowserRouter>
     <Footer/>
+      </BrowserRouter>
     </div>
   );
 }

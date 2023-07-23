@@ -9,6 +9,7 @@ import styles from './Header.module.css'
 import logo from '../../assets/images/logo.png'
 //hooks
 import {useState,useRef} from 'react'
+import { Link } from 'react-router-dom'
 const Header = () => {
   const [toggle,setToggle] = useState(true)
 
@@ -47,8 +48,8 @@ const Header = () => {
                 <i className="bi bi-cart"></i>
               </div>
               <div className={styles.auth_container}>
-                  <li>Login</li>
-                  <li>register</li>
+                  <Link to={'/login'}>Login</Link>
+                  <Link to={'/register'}>register</Link>
               </div>
             </nav>
             
